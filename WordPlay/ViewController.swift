@@ -18,14 +18,14 @@ class ViewController: UIViewController {
     }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let word = enteredWord.text
+        let wordEntered = enteredWord.text!
     
         
-    
-let secondViewController = segue.destination as! secondViewController
-    
-    }
+        let svc = segue.destination as! secondViewController
+        svc.word = wordEntered
+
     }
     
 
 
+}

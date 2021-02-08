@@ -10,11 +10,12 @@ import UIKit
 class secondViewController: UIViewController {
 
     @IBOutlet weak var finishedSentence: UILabel!
+    var word = String()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-let wordEntered = String()
-        finishedSentence.text = "My uncle wants to go to the" + "\(wordEntered)"
+        finishedSentence.text = "My Uncle wants to go to the \(word)!"
         
         
   
